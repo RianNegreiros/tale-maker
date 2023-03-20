@@ -1,0 +1,15 @@
+<div class="flex items-center h-screen justify-center px-4">
+  <div class="max-w-sm overflow-hidden rounded-xl bg-white shadow-md duration-100 hover:scale-105 hover:shadow-xl">
+    <img src="<%= generate_image() %>" class="h-auto w-full"/>
+    <div class="p-5">
+      <p class="text-medium mb-5 text-gray-700">Click the button to auto generate stories! </p>
+      <button onClick="generateStory()" class="w-full bg-violet-600 py-2 text-violet-100 hover:bg-violet-500 hover:shadow-md duration-75 rounded-md">Generate Story</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function generateStory() {
+    window.location.replace("/result");
+  }
+</script>
